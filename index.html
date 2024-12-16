@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Basic and Premium UI</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #fdfbfb, #ebedee);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            flex: 1 1 calc(45% - 20px);
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .basic {
+            background: linear-gradient(135deg, #e8f5e9, #ffffff);
+        }
+
+        .basic h2 {
+            color: #388e3c;
+        }
+
+        .basic p {
+            color: #2e7d32;
+        }
+
+        .premium {
+            background: linear-gradient(135deg, #fffde7, #fff3e0);
+        }
+
+        .premium h2 {
+            color: #f9a825;
+        }
+
+        .premium p {
+            color: #ef6c00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card basic">
+            <h2>Restricted Dev Tools</h2>
+            <p>All the Dev Tools are restricted, To ensure your privacy to the code.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            alert("Don't Try Again");
+        });
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                alert("Don't Try Again");
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                alert("Don't Try Again");
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                alert("Don't Try Again");
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                alert("Don't Try Again");
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                alert("Don't Try Again");
+                return false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
